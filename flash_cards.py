@@ -1,8 +1,7 @@
 import pandas as pd
 from tkinter import *
 from random import randint
-##B1DDC6
-#4AA47B
+
 FONT = ('Arial', 50, 'normal')
 BACKGROUND_COLOR = "#4AA47B"
 MAX_RANGE = 997
@@ -12,10 +11,10 @@ screen.title('Russian Flashcards')
 screen.configure(background = BACKGROUND_COLOR, padx = 50, pady = 50)
 
 #imported images
-flashcard_back = PhotoImage(file = 'images/card_back.png')
-flashcard_front = PhotoImage(file='images/card_front.png')
-right =  PhotoImage(file='images/right1.png')
-wrong =  PhotoImage(file='images/wrong1.png')
+flashcard_back = PhotoImage(file = 'card_back.png')
+flashcard_front = PhotoImage(file='card_front.png')
+right =  PhotoImage(file='right1.png')
+wrong =  PhotoImage(file='wrong1.png')
 
 #imported csv
 data = pd.read_csv("russian.csv")
